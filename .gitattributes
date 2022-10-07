@@ -1,0 +1,5 @@
+ZegoEffects-main-ios-shared-objc/SDK/ZegoEffects.xcframework/ios-arm64/ZegoEffects.framework/ZegoEffects filter=lfs diff=lfs merge=lfs -text
+ZegoEffects-main-ios-shared-objc/SDK/ZegoEffects.xcframework/ios-x86_64-simulator/ZegoEffects.framework/ZegoEffects filter=lfs diff=lfs merge=lfs -text
+ZegoEffects-main-ios-shared-objc/SDK/ZegoEffects.xcframework/ios-x86_64-simulator/ZegoEffects.framework/ZegoEffects filter=lfs diff=lfs merge=lfs -text
+ZegoEffects-main-ios-shared-objc/SDK/ZegoEffects.xcframework/ios-arm64/ZegoEffects.framework/ZegoEffects filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text

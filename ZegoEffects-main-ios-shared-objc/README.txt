@@ -1,0 +1,32 @@
+├── Models    
+     ├── FaceDetectionModel.model  
+     ├── SegmentationModel.model   
+|── Pendants   
+     ├── pendantAnimal.bundle       
+     ├── pendantBaby.bundle         
+     ├── pendantCat.bundle          
+     ├── pendantClown.bundle/pendantClown_landscape.bundle                 
+     ├── pendantDeer.bundle         
+     ├── pendantDive.bundle/pendantDive_landscape.bundle                   
+     ├── pendantFacefilm.bundle/pendantFacefilm_landscape.bundle           
+     ├── pendantGirl.bundle/pendantGirl_landscape.bundle                   
+     ├── pendantWatermelon.bundle/pendantWatermelon_landscape.bundle       
+├── Resources 
+     ├── CommonResources.bundle     
+     ├── FaceWhiteningResources.bundle     
+     ├── ColorfulStyleResources         
+          ├── Autumn.bundle         
+          ├── Brighten.bundle       
+          ├── Cool.bundle           
+          ├── Cozily.bundle         
+          ├── Creamy.bundle         
+          ├── Film-like.bundle      
+          ├── Fresh.bundle          
+          ├── Night.bundle          
+          ├── Sunset.bundle         
+          ├── Sweet.bundle          
+     ├── PendantResources.bundle           
+     ├── RosyResources.bundle              
+     ├── TeethWhiteningResources.bundle    
+├── SDK           
+├── VERSION.txt   

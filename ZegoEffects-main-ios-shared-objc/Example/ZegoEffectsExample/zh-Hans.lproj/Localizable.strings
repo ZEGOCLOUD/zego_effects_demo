@@ -1,0 +1,37 @@
+/*
+  Localizable.strings
+  ZegoEffectsExample
+
+  Created by Patrick Fu on 2021/3/22.
+  Copyright © 2021 Zego. All rights reserved.
+*/
+
+"ok" =                     "好";
+
+// Side bar buttons
+"flip" =                   "翻转";
+"beauty" =                 "美颜";
+"special_effects" =        "特效";
+"setting" =                "设置";
+
+// Tool bar buttons
+"reset" =                  "重置";
+
+"beauty_skin" =            "美肤";
+"smooth" =                 "磨皮";
+"whiten" =                 "美白";
+
+"beauty_shape" =           "美型";
+"face_lifting" =           "瘦脸";
+"big_eyes" =               "大眼";
+
+"no_effects" =             "原图";
+"chroma_key" =             "绿幕分割";
+"segmentation" =           "人像分割";
+
+"camera_access" =          "相机权限";
+"resolution" =             "分辨率";
+"version_info" =           "版本信息";
+
+"can_not_save" =           "无法保存";
+"photo_access_guide" =     "请在设备的 “设置-隐私-照片” 选项中，允许 ZegoEffectsExample 访问你的照片";

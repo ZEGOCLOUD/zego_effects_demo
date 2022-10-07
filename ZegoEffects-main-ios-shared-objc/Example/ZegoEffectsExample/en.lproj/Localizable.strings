@@ -1,0 +1,37 @@
+/*
+  Localizable.strings
+  ZegoEffectsExample
+
+  Created by Patrick Fu on 2021/3/22.
+  Copyright © 2021 Zego. All rights reserved.
+*/
+
+"ok" =                     "OK";
+
+// Side bar buttons
+"flip" =                   "Flip";
+"beauty" =                 "Beauty";
+"special_effects" =        "Effects";
+"setting" =                "Settings";
+
+// Tool bar buttons
+"reset" =                  "Reset";
+
+"beauty_skin" =            "SkinRetouch";
+"smooth" =                 "Smoothing";
+"whiten" =                 "Brightening";
+
+"beauty_shape" =           "FaceRetouch";
+"face_lifting" =           "SlimmerFace";
+"big_eyes" =               "BiggerEyes";
+
+"no_effects" =             "NoEffects";
+"chroma_key" =             "ChromaKey";
+"segmentation" =           "Segmentation";
+
+"camera_access" =          "Camera Access";
+"resolution" =             "Resolution";
+"version_info" =           "Version Info";
+
+"can_not_save" =           "Can't save";
+"photo_access_guide" =     "Please allow ZegoEffectsExample to access your photos in the \"Settings-Privacy-Photos\" option of your device";

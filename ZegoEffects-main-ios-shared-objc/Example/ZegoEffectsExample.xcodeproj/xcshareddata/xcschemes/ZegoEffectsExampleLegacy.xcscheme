@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1240"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "cd $SRCROOT&#10;&#10;# Copy full xcframework if need for run first time&#10;if [ ! -e ./ZegoEffectsExample/Libs/ZegoEffects.xcframework ]; then&#10;    mkdir ./ZegoEffectsExample/Libs/ZegoEffects.xcframework&#10;    if [ -e &quot;../../../_out/ios-shared-objc/debug/xcframework/ZegoEffects.xcframework&quot; ]; then&#10;        cp -rf ../../../_out/ios-shared-objc/debug/xcframework/ZegoEffects.xcframework ./Libs/&#10;    fi&#10;fi&#10;&#10;# Copy arm64 single framework (for update after run &quot;All&quot; target)&#10;if [ -e &quot;../../../_out/ios-shared-objc/debug/arm64/ZegoEffects.framework&quot; ]; then&#10;    cp -rf ../../../_out/ios-shared-objc/debug/arm64/ZegoEffects.framework ./Libs/ZegoEffects.xcframework/ios-arm64/&#10;fi&#10;&#10;# Copy x86_64 single framework (for update after run &quot;All&quot; target and use simulator)&#10;if [ -e &quot;../../../_out/ios-shared-objc/debug/x64/ZegoEffects.framework&quot; ]; then&#10;    cp -rf ../../../_out/ios-shared-objc/debug/x64/ZegoEffects.framework ./Libs/ZegoEffects.xcframework/ios-x86_64-simulator/&#10;fi&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8600EF752635154700A79D8D"
+               BuildableName = "ZegoEffectsExampleLegacy.app"
+               BlueprintName = "ZegoEffectsExampleLegacy"
+               ReferencedContainer = "container:ZegoEffectsExample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      disableMainThreadChecker = "YES"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8600EF752635154700A79D8D"
+            BuildableName = "ZegoEffectsExampleLegacy.app"
+            BlueprintName = "ZegoEffectsExampleLegacy"
+            ReferencedContainer = "container:ZegoEffectsExample.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "8600EF752635154700A79D8D"
+            BuildableName = "ZegoEffectsExampleLegacy.app"
+            BlueprintName = "ZegoEffectsExampleLegacy"
+            ReferencedContainer = "container:ZegoEffectsExample.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

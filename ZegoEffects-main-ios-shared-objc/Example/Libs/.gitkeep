@@ -1,0 +1,7 @@
+Please put the `ZegoEffects.xcframework` under this folder.
+
+```tree
+.
+├── .gitkeep
+└── ZegoEffects.xcframework
+```

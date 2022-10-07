@@ -1,0 +1,5 @@
+Libs/*
+!Libs/.gitkeep
+xcuserdata
+Pods/*
+Podfile.lock

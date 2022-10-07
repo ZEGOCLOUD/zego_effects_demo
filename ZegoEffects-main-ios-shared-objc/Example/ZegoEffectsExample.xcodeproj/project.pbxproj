@@ -1,0 +1,1743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8600EF7A2635154700A79D8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600EF792635154700A79D8D /* AppDelegate.m */; };
+		8600EF832635154700A79D8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8600EF812635154700A79D8D /* Main.storyboard */; };
+		8600EF852635154800A79D8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8600EF842635154800A79D8D /* Assets.xcassets */; };
+		8600EF882635154800A79D8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8600EF862635154800A79D8D /* LaunchScreen.storyboard */; };
+		8600EF8B2635154800A79D8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600EF8A2635154800A79D8D /* main.m */; };
+		8600EF9C263551B800A79D8D /* ZGEffectsOnlyRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600EF9B263551B800A79D8D /* ZGEffectsOnlyRootViewController.m */; };
+		8600EFA12635534D00A79D8D /* PortraitSegmentation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8600EFA02635534D00A79D8D /* PortraitSegmentation.storyboard */; };
+		8600EFA42635536600A79D8D /* ZGPortraitSegmentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600EFA32635536600A79D8D /* ZGPortraitSegmentationViewController.m */; };
+		8600EFA72635623100A79D8D /* ZGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600EFA62635623100A79D8D /* ZGHomeViewController.m */; };
+		8600EFB52635661900A79D8D /* ZGEffectsOnlyEngineManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600EFB42635661900A79D8D /* ZGEffectsOnlyEngineManager.m */; };
+		8600EFB8263568D200A79D8D /* ZegoLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 8600EFB7263568D200A79D8D /* ZegoLicense.m */; };
+		8616632D264D614400918C1B /* FaceWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86166323264D614400918C1B /* FaceWhiteningResources.bundle */; };
+		8616632F264D614400918C1B /* TeethWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86166324264D614400918C1B /* TeethWhiteningResources.bundle */; };
+		86166331264D614400918C1B /* RosyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86166325264D614400918C1B /* RosyResources.bundle */; };
+		86166333264D614400918C1B /* PendantResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86166326264D614400918C1B /* PendantResources.bundle */; };
+		86166340264D63C900918C1B /* ZGEffectsOnlyEngineManager+Pendant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8616633F264D63C900918C1B /* ZGEffectsOnlyEngineManager+Pendant.m */; };
+		8618AE2D26E9D161004A3310 /* ZegoItemCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618AE2C26E9D161004A3310 /* ZegoItemCellVM.m */; };
+		8618AE3026E9D211004A3310 /* ZegoItemLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618AE2F26E9D211004A3310 /* ZegoItemLibrary.m */; };
+		8618AE3326E9D44C004A3310 /* ZegoItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8618AE3226E9D44C004A3310 /* ZegoItemCell.m */; };
+		862A0821265BF54400D5B590 /* ZGPortraitBgViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A0820265BF54400D5B590 /* ZGPortraitBgViewModel.m */; };
+		862A0830265BF81A00D5B590 /* ZGPortraitBgVmStaticFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A082F265BF81A00D5B590 /* ZGPortraitBgVmStaticFactory.m */; };
+		862A0860265CE11D00D5B590 /* ZGPortraitMosaicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A085F265CE11D00D5B590 /* ZGPortraitMosaicViewModel.m */; };
+		862A0864265D2B5B00D5B590 /* ZGChromaKeyBgVmStaticFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A0863265D2B5B00D5B590 /* ZGChromaKeyBgVmStaticFactory.m */; };
+		862A086E265D2C5A00D5B590 /* ZGChromaKeyBgViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A086D265D2C5A00D5B590 /* ZGChromaKeyBgViewModel.m */; };
+		862A0871265D327D00D5B590 /* ZGChromaKeyMosaicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 862A086F265D327D00D5B590 /* ZGChromaKeyMosaicViewModel.m */; };
+		8638426A2637B29F00858AE5 /* ChromaKey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 863842692637B29F00858AE5 /* ChromaKey.storyboard */; };
+		8638426D2637B2BD00858AE5 /* ZGChromaKeySettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638426C2637B2BD00858AE5 /* ZGChromaKeySettingTableViewController.m */; };
+		863842702637B2D000858AE5 /* ZGChromaKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8638426F2637B2D000858AE5 /* ZGChromaKeyViewController.m */; };
+		863842742637BCD200858AE5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 863842722637BCD200858AE5 /* MBProgressHUD.m */; };
+		863842782637BD0F00858AE5 /* ZegoHudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 863842772637BD0F00858AE5 /* ZegoHudManager.m */; };
+		864576E4267AEB0C004A8776 /* ZGFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864576E3267AEB0C004A8776 /* ZGFilterViewController.m */; };
+		864576E7267AEB33004A8776 /* ZGEffectsOnlyEngineManager+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 864576E6267AEB33004A8776 /* ZGEffectsOnlyEngineManager+Filter.m */; };
+		864576F9267AF4C1004A8776 /* ZGFilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 864576F8267AF4C1004A8776 /* ZGFilterDataSource.m */; };
+		864576FC267AF62B004A8776 /* ZGFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 864576FB267AF62B004A8776 /* ZGFilterModel.m */; };
+		864576FF267AFDF6004A8776 /* ZGFilterSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864576FE267AFDF6004A8776 /* ZGFilterSettingViewController.m */; };
+		8648568A264D082B00EE6C43 /* ZGPendantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86485689264D082B00EE6C43 /* ZGPendantViewController.m */; };
+		8648568D264D119F00EE6C43 /* ZGPendantSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8648568C264D119F00EE6C43 /* ZGPendantSettingViewController.m */; };
+		86485693264D17F500EE6C43 /* ZGPendantModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86485692264D17F500EE6C43 /* ZGPendantModel.m */; };
+		86485696264D182D00EE6C43 /* ZGPendantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86485695264D182D00EE6C43 /* ZGPendantCell.m */; };
+		865648CB26C4FF0D004D54C1 /* ZGEffectsBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 865648C426C4FF0D004D54C1 /* ZGEffectsBaseRequest.m */; };
+		865648CC26C4FF0D004D54C1 /* ZGLicenseValidationApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 865648C926C4FF0D004D54C1 /* ZGLicenseValidationApi.m */; };
+		865648CD26C4FF0D004D54C1 /* ZGEffectsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 865648CA26C4FF0D004D54C1 /* ZGEffectsDataProvider.m */; };
+		8661BEF526EB055100BC073E /* ZGEffectsOnlyEngineManager+Beauty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8661BEF426EB055100BC073E /* ZGEffectsOnlyEngineManager+Beauty.m */; };
+		8661BF0126EF4F7C00BC073E /* FaceDetectionModel.model in Resources */ = {isa = PBXBuildFile; fileRef = 8661BEFF26EF4F7C00BC073E /* FaceDetectionModel.model */; };
+		8661BF0226EF4F7C00BC073E /* SegmentationModel.model in Resources */ = {isa = PBXBuildFile; fileRef = 8661BF0026EF4F7C00BC073E /* SegmentationModel.model */; };
+		8669787726F1D5CF0095D577 /* ZGHighPfmFaceDetectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669787626F1D5CF0095D577 /* ZGHighPfmFaceDetectionVC.m */; };
+		8669787A26F357750095D577 /* ZegoEffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8669787826F357340095D577 /* ZegoEffects.xcframework */; };
+		8669787B26F357750095D577 /* ZegoEffects.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8669787826F357340095D577 /* ZegoEffects.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8670A100271FEC9D002411D0 /* ZGStyleMakeupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670A0FF271FEC9D002411D0 /* ZGStyleMakeupViewController.m */; };
+		8670A103271FF260002411D0 /* ZGEffectsOnlyEngineManager+StyleMakeup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670A102271FF260002411D0 /* ZGEffectsOnlyEngineManager+StyleMakeup.m */; };
+		8670A106271FFDE2002411D0 /* ZGStyleMakeupStttingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8670A105271FFDE2002411D0 /* ZGStyleMakeupStttingViewController.m */; };
+		86725C07265273B600DFB28B /* ZGFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86725C06265273B600DFB28B /* ZGFeatureViewController.m */; };
+		8674FA0C263BABC200D242CB /* FaceDetection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8674FA0B263BABC200D242CB /* FaceDetection.storyboard */; };
+		8674FA0F263BAC0200D242CB /* ZGFaceDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8674FA0E263BAC0200D242CB /* ZGFaceDetectionViewController.m */; };
+		8674FA12263BAC1700D242CB /* ZGFaceDetectionSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8674FA11263BAC1700D242CB /* ZGFaceDetectionSettingTableViewController.m */; };
+		8674FA1E263D071600D242CB /* ZGBasicBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8674FA1D263D071600D242CB /* ZGBasicBeautyViewController.m */; };
+		8687CC732685E045006E22E6 /* pendantGirl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8687CC6A2685E045006E22E6 /* pendantGirl.bundle */; };
+		8687CC742685E045006E22E6 /* pendantFacefilm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8687CC6B2685E045006E22E6 /* pendantFacefilm.bundle */; };
+		8687CC752685E045006E22E6 /* pendantBaby.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8687CC6C2685E045006E22E6 /* pendantBaby.bundle */; };
+		8687CC782685E045006E22E6 /* pendantDive.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8687CC6F2685E045006E22E6 /* pendantDive.bundle */; };
+		8687CC792685E045006E22E6 /* pendantDeer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8687CC702685E045006E22E6 /* pendantDeer.bundle */; };
+		8687CC7A2685E045006E22E6 /* pendantClown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8687CC712685E045006E22E6 /* pendantClown.bundle */; };
+		8687CC7B2685E045006E22E6 /* pendantAnimal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8687CC722685E045006E22E6 /* pendantAnimal.bundle */; };
+		868C95C42654BB26009E9444 /* ZGPortraitSegSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 868C95C32654BB26009E9444 /* ZGPortraitSegSettingViewModel.m */; };
+		868C95C72654E7FA009E9444 /* ZGPortraitSegSettingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 868C95C62654E7FA009E9444 /* ZGPortraitSegSettingDataSource.m */; };
+		868C95CD2654EB9F009E9444 /* ZGEffectsOnlyEngineManager+PortraitSeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 868C95CC2654EB9F009E9444 /* ZGEffectsOnlyEngineManager+PortraitSeg.m */; };
+		868C95DA2654F32C009E9444 /* ZGEffectsOnlyEngineManager+ChromaKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 868C95D92654F32C009E9444 /* ZGEffectsOnlyEngineManager+ChromaKey.m */; };
+		86A2E86C26A6A88B00F937AE /* ZGEffectsExpressRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E86B26A6A88B00F937AE /* ZGEffectsExpressRootViewController.m */; };
+		86A2E87526A6AF5400F937AE /* ZGExpressCaptureFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E87426A6AF5400F937AE /* ZGExpressCaptureFeatureViewController.m */; };
+		86A2E87B26A6B78F00F937AE /* ZGExpressCaptureBasicBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E87A26A6B78F00F937AE /* ZGExpressCaptureBasicBeautyViewController.m */; };
+		86A2E87E26A6B88B00F937AE /* ZGExpressCapturePendantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E87D26A6B88B00F937AE /* ZGExpressCapturePendantViewController.m */; };
+		86A2E88D26A6C0B500F937AE /* ZGExpressProcessPendantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E88526A6C0B500F937AE /* ZGExpressProcessPendantViewController.m */; };
+		86A2E88E26A6C0B500F937AE /* ZGExpressProcessFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E88726A6C0B500F937AE /* ZGExpressProcessFeatureViewController.m */; };
+		86A2E88F26A6C0B500F937AE /* ZGExpressProcessBasicBeautyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E88926A6C0B500F937AE /* ZGExpressProcessBasicBeautyViewController.m */; };
+		86A2E89226A82A0100F937AE /* KeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A2E89026A82A0000F937AE /* KeyCenter.m */; };
+		86B67EC4265295E000BE7AA1 /* ZGBasicBeautySettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B67EC3265295E000BE7AA1 /* ZGBasicBeautySettingController.m */; };
+		86B67ECD2652997300BE7AA1 /* ZGBasicBeautyCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B67ECC2652997300BE7AA1 /* ZGBasicBeautyCellViewModel.m */; };
+		86B67ED426529A0000BE7AA1 /* ZGBasicBeautySettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B67ED226529A0000BE7AA1 /* ZGBasicBeautySettingCell.m */; };
+		86B67ED526529A0000BE7AA1 /* ZGBasicBeautySettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86B67ED326529A0000BE7AA1 /* ZGBasicBeautySettingCell.xib */; };
+		86B67ED92652A78F00BE7AA1 /* ZGBasicBeautyParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B67ED82652A78F00BE7AA1 /* ZGBasicBeautyParam.m */; };
+		86B67EDC2652BD7400BE7AA1 /* ZGBasicBeautyDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B67EDB2652BD7400BE7AA1 /* ZGBasicBeautyDataSource.m */; };
+		86BF271027152F1000629882 /* ZegoEffectsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF270F27152F1000629882 /* ZegoEffectsExampleApp.swift */; };
+		86BF271227152F1000629882 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF271127152F1000629882 /* ContentView.swift */; };
+		86BF273827152F3B00629882 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF271D27152F3B00629882 /* ContentView.swift */; };
+		86BF273B27152F3B00629882 /* FeatureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF272227152F3B00629882 /* FeatureInfo.swift */; };
+		86BF273C27152F3B00629882 /* ZegoLicense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF272327152F3B00629882 /* ZegoLicense.swift */; };
+		86BF273E27152F3B00629882 /* ZegoEffectsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF272727152F3B00629882 /* ZegoEffectsCoordinator.swift */; };
+		86BF274027152F3B00629882 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF272A27152F3B00629882 /* PreviewView.swift */; };
+		86BF274227152F3B00629882 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF272C27152F3B00629882 /* SettingView.swift */; };
+		86BF274327152F3B00629882 /* ZegoEffectsExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF272D27152F3B00629882 /* ZegoEffectsExampleApp.swift */; };
+		86BF274427152F3B00629882 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF272F27152F3B00629882 /* Alert.swift */; };
+		86BF274527152F3B00629882 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF273027152F3B00629882 /* PhotoHelper.swift */; };
+		86BF274627152F3B00629882 /* CameraServiceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF273227152F3B00629882 /* CameraServiceCoordinator.swift */; };
+		86BF274727152F3B00629882 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF273327152F3B00629882 /* CameraService.swift */; };
+		86BF274827152F3B00629882 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF273427152F3B00629882 /* ActivityIndicator.swift */; };
+		86BF274927152F3B00629882 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF273527152F3B00629882 /* HUD.swift */; };
+		86BF274A27152F3B00629882 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF273627152F3B00629882 /* ToolBarView.swift */; };
+		86BF274C27152FFB00629882 /* ZegoEffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8669787826F357340095D577 /* ZegoEffects.xcframework */; };
+		86BF274D27152FFB00629882 /* ZegoEffects.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8669787826F357340095D577 /* ZegoEffects.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		86CCC4642786A58E001BBB34 /* MakeupResources in Resources */ = {isa = PBXBuildFile; fileRef = 86CCC4612786A58E001BBB34 /* MakeupResources */; };
+		86CCC4652786A58E001BBB34 /* CommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86CCC4622786A58E001BBB34 /* CommonResources.bundle */; };
+		86CCC4662786A58E001BBB34 /* ColorfulStyleResources in Resources */ = {isa = PBXBuildFile; fileRef = 86CCC4632786A58E001BBB34 /* ColorfulStyleResources */; };
+		86DCA5B726DA7C8800A5756C /* pendantWatermelon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA5B626DA7C8800A5756C /* pendantWatermelon.bundle */; };
+		86DCA5B926DA7C8E00A5756C /* pendantCat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86DCA5B826DA7C8E00A5756C /* pendantCat.bundle */; };
+		86E2FA50263595AF001C87B9 /* ZGCaptureDeviceCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E2FA4E263595AF001C87B9 /* ZGCaptureDeviceCamera.m */; };
+		86E2FA6A2636B7C5001C87B9 /* background_big_sur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 86139232260BC6DA0032EA98 /* background_big_sur.jpg */; };
+		86E2FA882636CCE5001C87B9 /* ZGPortraitSegmentationSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E2FA872636CCE5001C87B9 /* ZGPortraitSegmentationSettingTableViewController.m */; };
+		86E6970C2653FC5E00EE3071 /* ZGChromaKeySettingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E6970B2653FC5E00EE3071 /* ZGChromaKeySettingDataSource.m */; };
+		86EEE86C2681B92F0073BF25 /* ZGBasicBeautyAdvancedCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EEE86B2681B92F0073BF25 /* ZGBasicBeautyAdvancedCellViewModel.m */; };
+		86EEE86F2681BF070073BF25 /* ZGBasicBeautyAdvancedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EEE86E2681BF070073BF25 /* ZGBasicBeautyAdvancedModel.m */; };
+		86EEE8722681C12F0073BF25 /* ZGEffectsOnlyEngineManager+AdvancedBeauty.m in Sources */ = {isa = PBXBuildFile; fileRef = 86EEE8712681C12F0073BF25 /* ZGEffectsOnlyEngineManager+AdvancedBeauty.m */; };
+		86F5D0B22643D73C003C2C85 /* APITest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F5D0B12643D73C003C2C85 /* APITest.storyboard */; };
+		86F5D0B52644DC48003C2C85 /* ZGAPITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5D0B42644DC48003C2C85 /* ZGAPITestViewController.m */; };
+		86F5D0B82644DC5E003C2C85 /* ZGAPITestSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5D0B72644DC5E003C2C85 /* ZGAPITestSettingTableViewController.m */; };
+		86F5D0BB2644F8EC003C2C85 /* ZGHomeSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F5D0BA2644F8EC003C2C85 /* ZGHomeSettingTableViewController.m */; };
+		86F7D5EC2653724600A32E79 /* ZGPendantDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F7D5EB2653724600A32E79 /* ZGPendantDataSource.m */; };
+		86F7D5F02653B4D800A32E79 /* ZGChromaKeySettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F7D5EF2653B4D800A32E79 /* ZGChromaKeySettingViewModel.m */; };
+		E1FD886DE449C64907CD105C /* Pods_ZegoEffectsExampleLegacy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 107BEB97ADE0E26F7EA21040 /* Pods_ZegoEffectsExampleLegacy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8600EF94263515B900A79D8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8669787B26F357750095D577 /* ZegoEffects.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86BF274E27152FFB00629882 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				86BF274D27152FFB00629882 /* ZegoEffects.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		107BEB97ADE0E26F7EA21040 /* Pods_ZegoEffectsExampleLegacy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoEffectsExampleLegacy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A9BE8FD8DA1EA2EEF69906 /* Pods-ZegoEffectsExampleLegacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoEffectsExampleLegacy.debug.xcconfig"; path = "Target Support Files/Pods-ZegoEffectsExampleLegacy/Pods-ZegoEffectsExampleLegacy.debug.xcconfig"; sourceTree = "<group>"; };
+		716BE552D8557F9B2C349C7E /* Pods-ZegoEffectsExampleLegacy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoEffectsExampleLegacy.release.xcconfig"; path = "Target Support Files/Pods-ZegoEffectsExampleLegacy/Pods-ZegoEffectsExampleLegacy.release.xcconfig"; sourceTree = "<group>"; };
+		76B84172D5B20D8D6E60AF78 /* Pods-ZegoEffectsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoEffectsExample.release.xcconfig"; path = "Target Support Files/Pods-ZegoEffectsExample/Pods-ZegoEffectsExample.release.xcconfig"; sourceTree = "<group>"; };
+		8600EF762635154700A79D8D /* ZegoEffectsExampleLegacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoEffectsExampleLegacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8600EF782635154700A79D8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8600EF792635154700A79D8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8600EF822635154700A79D8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8600EF842635154800A79D8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8600EF872635154800A79D8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8600EF892635154800A79D8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8600EF8A2635154800A79D8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8600EF9A263551B800A79D8D /* ZGEffectsOnlyRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGEffectsOnlyRootViewController.h; sourceTree = "<group>"; };
+		8600EF9B263551B800A79D8D /* ZGEffectsOnlyRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGEffectsOnlyRootViewController.m; sourceTree = "<group>"; };
+		8600EFA02635534D00A79D8D /* PortraitSegmentation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PortraitSegmentation.storyboard; sourceTree = "<group>"; };
+		8600EFA22635536600A79D8D /* ZGPortraitSegmentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPortraitSegmentationViewController.h; sourceTree = "<group>"; };
+		8600EFA32635536600A79D8D /* ZGPortraitSegmentationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPortraitSegmentationViewController.m; sourceTree = "<group>"; };
+		8600EFA52635623100A79D8D /* ZGHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGHomeViewController.h; sourceTree = "<group>"; };
+		8600EFA62635623100A79D8D /* ZGHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGHomeViewController.m; sourceTree = "<group>"; };
+		8600EFB32635661900A79D8D /* ZGEffectsOnlyEngineManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGEffectsOnlyEngineManager.h; sourceTree = "<group>"; };
+		8600EFB42635661900A79D8D /* ZGEffectsOnlyEngineManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGEffectsOnlyEngineManager.m; sourceTree = "<group>"; };
+		8600EFB6263568D200A79D8D /* ZegoLicense.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoLicense.h; sourceTree = "<group>"; };
+		8600EFB7263568D200A79D8D /* ZegoLicense.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoLicense.m; sourceTree = "<group>"; };
+		86139232260BC6DA0032EA98 /* background_big_sur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_big_sur.jpg; sourceTree = "<group>"; };
+		86166323264D614400918C1B /* FaceWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FaceWhiteningResources.bundle; sourceTree = "<group>"; };
+		86166324264D614400918C1B /* TeethWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeethWhiteningResources.bundle; sourceTree = "<group>"; };
+		86166325264D614400918C1B /* RosyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RosyResources.bundle; sourceTree = "<group>"; };
+		86166326264D614400918C1B /* PendantResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PendantResources.bundle; sourceTree = "<group>"; };
+		8616633E264D63C900918C1B /* ZGEffectsOnlyEngineManager+Pendant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGEffectsOnlyEngineManager+Pendant.h"; sourceTree = "<group>"; };
+		8616633F264D63C900918C1B /* ZGEffectsOnlyEngineManager+Pendant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZGEffectsOnlyEngineManager+Pendant.m"; sourceTree = "<group>"; };
+		8618AE2A26E9D115004A3310 /* ZegoItemTypeDefines.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ZegoItemTypeDefines.h; sourceTree = "<group>"; tabWidth = 4; };
+		8618AE2B26E9D161004A3310 /* ZegoItemCellVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoItemCellVM.h; sourceTree = "<group>"; };
+		8618AE2C26E9D161004A3310 /* ZegoItemCellVM.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ZegoItemCellVM.m; sourceTree = "<group>"; };
+		8618AE2E26E9D211004A3310 /* ZegoItemLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoItemLibrary.h; sourceTree = "<group>"; };
+		8618AE2F26E9D211004A3310 /* ZegoItemLibrary.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ZegoItemLibrary.m; sourceTree = "<group>"; };
+		8618AE3126E9D44C004A3310 /* ZegoItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoItemCell.h; sourceTree = "<group>"; };
+		8618AE3226E9D44C004A3310 /* ZegoItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZegoItemCell.m; sourceTree = "<group>"; };
+		862A081F265BF54400D5B590 /* ZGPortraitBgViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPortraitBgViewModel.h; sourceTree = "<group>"; };
+		862A0820265BF54400D5B590 /* ZGPortraitBgViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPortraitBgViewModel.m; sourceTree = "<group>"; };
+		862A082E265BF81A00D5B590 /* ZGPortraitBgVmStaticFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPortraitBgVmStaticFactory.h; sourceTree = "<group>"; };
+		862A082F265BF81A00D5B590 /* ZGPortraitBgVmStaticFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPortraitBgVmStaticFactory.m; sourceTree = "<group>"; };
+		862A085E265CE11D00D5B590 /* ZGPortraitMosaicViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPortraitMosaicViewModel.h; sourceTree = "<group>"; };
+		862A085F265CE11D00D5B590 /* ZGPortraitMosaicViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPortraitMosaicViewModel.m; sourceTree = "<group>"; };
+		862A0862265D2B5B00D5B590 /* ZGChromaKeyBgVmStaticFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChromaKeyBgVmStaticFactory.h; sourceTree = "<group>"; };
+		862A0863265D2B5B00D5B590 /* ZGChromaKeyBgVmStaticFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChromaKeyBgVmStaticFactory.m; sourceTree = "<group>"; };
+		862A086B265D2BB500D5B590 /* ZegoEffectOnlyDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZegoEffectOnlyDefines.h; sourceTree = "<group>"; };
+		862A086C265D2C5A00D5B590 /* ZGChromaKeyBgViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChromaKeyBgViewModel.h; sourceTree = "<group>"; };
+		862A086D265D2C5A00D5B590 /* ZGChromaKeyBgViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChromaKeyBgViewModel.m; sourceTree = "<group>"; };
+		862A086F265D327D00D5B590 /* ZGChromaKeyMosaicViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGChromaKeyMosaicViewModel.m; sourceTree = "<group>"; };
+		862A0870265D327D00D5B590 /* ZGChromaKeyMosaicViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGChromaKeyMosaicViewModel.h; sourceTree = "<group>"; };
+		863842692637B29F00858AE5 /* ChromaKey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChromaKey.storyboard; sourceTree = "<group>"; };
+		8638426B2637B2BD00858AE5 /* ZGChromaKeySettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChromaKeySettingTableViewController.h; sourceTree = "<group>"; };
+		8638426C2637B2BD00858AE5 /* ZGChromaKeySettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChromaKeySettingTableViewController.m; sourceTree = "<group>"; };
+		8638426E2637B2D000858AE5 /* ZGChromaKeyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChromaKeyViewController.h; sourceTree = "<group>"; };
+		8638426F2637B2D000858AE5 /* ZGChromaKeyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChromaKeyViewController.m; sourceTree = "<group>"; };
+		863842722637BCD200858AE5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		863842732637BCD200858AE5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		863842762637BD0F00858AE5 /* ZegoHudManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZegoHudManager.h; sourceTree = "<group>"; };
+		863842772637BD0F00858AE5 /* ZegoHudManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZegoHudManager.m; sourceTree = "<group>"; };
+		864576E2267AEB0C004A8776 /* ZGFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFilterViewController.h; sourceTree = "<group>"; };
+		864576E3267AEB0C004A8776 /* ZGFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFilterViewController.m; sourceTree = "<group>"; };
+		864576E5267AEB33004A8776 /* ZGEffectsOnlyEngineManager+Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGEffectsOnlyEngineManager+Filter.h"; sourceTree = "<group>"; };
+		864576E6267AEB33004A8776 /* ZGEffectsOnlyEngineManager+Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZGEffectsOnlyEngineManager+Filter.m"; sourceTree = "<group>"; };
+		864576F7267AF4C1004A8776 /* ZGFilterDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFilterDataSource.h; sourceTree = "<group>"; };
+		864576F8267AF4C1004A8776 /* ZGFilterDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFilterDataSource.m; sourceTree = "<group>"; };
+		864576FA267AF62B004A8776 /* ZGFilterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFilterModel.h; sourceTree = "<group>"; };
+		864576FB267AF62B004A8776 /* ZGFilterModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFilterModel.m; sourceTree = "<group>"; };
+		864576FD267AFDF6004A8776 /* ZGFilterSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFilterSettingViewController.h; sourceTree = "<group>"; };
+		864576FE267AFDF6004A8776 /* ZGFilterSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFilterSettingViewController.m; sourceTree = "<group>"; };
+		86485688264D082B00EE6C43 /* ZGPendantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPendantViewController.h; sourceTree = "<group>"; };
+		86485689264D082B00EE6C43 /* ZGPendantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPendantViewController.m; sourceTree = "<group>"; };
+		8648568B264D119F00EE6C43 /* ZGPendantSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPendantSettingViewController.h; sourceTree = "<group>"; };
+		8648568C264D119F00EE6C43 /* ZGPendantSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPendantSettingViewController.m; sourceTree = "<group>"; };
+		86485691264D17F500EE6C43 /* ZGPendantModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPendantModel.h; sourceTree = "<group>"; };
+		86485692264D17F500EE6C43 /* ZGPendantModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPendantModel.m; sourceTree = "<group>"; };
+		86485694264D182D00EE6C43 /* ZGPendantCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPendantCell.h; sourceTree = "<group>"; };
+		86485695264D182D00EE6C43 /* ZGPendantCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPendantCell.m; sourceTree = "<group>"; };
+		865648C426C4FF0D004D54C1 /* ZGEffectsBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGEffectsBaseRequest.m; sourceTree = "<group>"; };
+		865648C526C4FF0D004D54C1 /* ZGEffectsDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGEffectsDataProvider.h; sourceTree = "<group>"; };
+		865648C626C4FF0D004D54C1 /* ZGEffectsBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGEffectsBaseRequest.h; sourceTree = "<group>"; };
+		865648C826C4FF0D004D54C1 /* ZGLicenseValidationApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGLicenseValidationApi.h; sourceTree = "<group>"; };
+		865648C926C4FF0D004D54C1 /* ZGLicenseValidationApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGLicenseValidationApi.m; sourceTree = "<group>"; };
+		865648CA26C4FF0D004D54C1 /* ZGEffectsDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGEffectsDataProvider.m; sourceTree = "<group>"; };
+		8661BEF326EB055100BC073E /* ZGEffectsOnlyEngineManager+Beauty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGEffectsOnlyEngineManager+Beauty.h"; sourceTree = "<group>"; };
+		8661BEF426EB055100BC073E /* ZGEffectsOnlyEngineManager+Beauty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZGEffectsOnlyEngineManager+Beauty.m"; sourceTree = "<group>"; };
+		8661BEFF26EF4F7C00BC073E /* FaceDetectionModel.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceDetectionModel.model; sourceTree = "<group>"; };
+		8661BF0026EF4F7C00BC073E /* SegmentationModel.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = SegmentationModel.model; sourceTree = "<group>"; };
+		8669787526F1D5CF0095D577 /* ZGHighPfmFaceDetectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGHighPfmFaceDetectionVC.h; sourceTree = "<group>"; };
+		8669787626F1D5CF0095D577 /* ZGHighPfmFaceDetectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGHighPfmFaceDetectionVC.m; sourceTree = "<group>"; };
+		8669787826F357340095D577 /* ZegoEffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ZegoEffects.xcframework; sourceTree = "<group>"; };
+		8670A0FE271FEC9D002411D0 /* ZGStyleMakeupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGStyleMakeupViewController.h; sourceTree = "<group>"; };
+		8670A0FF271FEC9D002411D0 /* ZGStyleMakeupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGStyleMakeupViewController.m; sourceTree = "<group>"; };
+		8670A101271FF260002411D0 /* ZGEffectsOnlyEngineManager+StyleMakeup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGEffectsOnlyEngineManager+StyleMakeup.h"; sourceTree = "<group>"; };
+		8670A102271FF260002411D0 /* ZGEffectsOnlyEngineManager+StyleMakeup.m */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = "ZGEffectsOnlyEngineManager+StyleMakeup.m"; sourceTree = "<group>"; };
+		8670A104271FFDE2002411D0 /* ZGStyleMakeupStttingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGStyleMakeupStttingViewController.h; sourceTree = "<group>"; };
+		8670A105271FFDE2002411D0 /* ZGStyleMakeupStttingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGStyleMakeupStttingViewController.m; sourceTree = "<group>"; };
+		86725C05265273B600DFB28B /* ZGFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFeatureViewController.h; sourceTree = "<group>"; };
+		86725C06265273B600DFB28B /* ZGFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFeatureViewController.m; sourceTree = "<group>"; };
+		8674FA0B263BABC200D242CB /* FaceDetection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FaceDetection.storyboard; sourceTree = "<group>"; };
+		8674FA0D263BAC0200D242CB /* ZGFaceDetectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFaceDetectionViewController.h; sourceTree = "<group>"; };
+		8674FA0E263BAC0200D242CB /* ZGFaceDetectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFaceDetectionViewController.m; sourceTree = "<group>"; };
+		8674FA10263BAC1700D242CB /* ZGFaceDetectionSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGFaceDetectionSettingTableViewController.h; sourceTree = "<group>"; };
+		8674FA11263BAC1700D242CB /* ZGFaceDetectionSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGFaceDetectionSettingTableViewController.m; sourceTree = "<group>"; };
+		8674FA1C263D071600D242CB /* ZGBasicBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautyViewController.h; sourceTree = "<group>"; };
+		8674FA1D263D071600D242CB /* ZGBasicBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautyViewController.m; sourceTree = "<group>"; };
+		8687CC6A2685E045006E22E6 /* pendantGirl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantGirl.bundle; sourceTree = "<group>"; };
+		8687CC6B2685E045006E22E6 /* pendantFacefilm.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantFacefilm.bundle; sourceTree = "<group>"; };
+		8687CC6C2685E045006E22E6 /* pendantBaby.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantBaby.bundle; sourceTree = "<group>"; };
+		8687CC6F2685E045006E22E6 /* pendantDive.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantDive.bundle; sourceTree = "<group>"; };
+		8687CC702685E045006E22E6 /* pendantDeer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantDeer.bundle; sourceTree = "<group>"; };
+		8687CC712685E045006E22E6 /* pendantClown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantClown.bundle; sourceTree = "<group>"; };
+		8687CC722685E045006E22E6 /* pendantAnimal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantAnimal.bundle; sourceTree = "<group>"; };
+		868C95C22654BB26009E9444 /* ZGPortraitSegSettingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPortraitSegSettingViewModel.h; sourceTree = "<group>"; };
+		868C95C32654BB26009E9444 /* ZGPortraitSegSettingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPortraitSegSettingViewModel.m; sourceTree = "<group>"; };
+		868C95C52654E7FA009E9444 /* ZGPortraitSegSettingDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPortraitSegSettingDataSource.h; sourceTree = "<group>"; };
+		868C95C62654E7FA009E9444 /* ZGPortraitSegSettingDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPortraitSegSettingDataSource.m; sourceTree = "<group>"; };
+		868C95CB2654EB9F009E9444 /* ZGEffectsOnlyEngineManager+PortraitSeg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGEffectsOnlyEngineManager+PortraitSeg.h"; sourceTree = "<group>"; };
+		868C95CC2654EB9F009E9444 /* ZGEffectsOnlyEngineManager+PortraitSeg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZGEffectsOnlyEngineManager+PortraitSeg.m"; sourceTree = "<group>"; };
+		868C95D82654F32C009E9444 /* ZGEffectsOnlyEngineManager+ChromaKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGEffectsOnlyEngineManager+ChromaKey.h"; sourceTree = "<group>"; };
+		868C95D92654F32C009E9444 /* ZGEffectsOnlyEngineManager+ChromaKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZGEffectsOnlyEngineManager+ChromaKey.m"; sourceTree = "<group>"; };
+		868C95DB2654F617009E9444 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		86A2E86A26A6A88B00F937AE /* ZGEffectsExpressRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGEffectsExpressRootViewController.h; sourceTree = "<group>"; };
+		86A2E86B26A6A88B00F937AE /* ZGEffectsExpressRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGEffectsExpressRootViewController.m; sourceTree = "<group>"; };
+		86A2E87326A6AF5400F937AE /* ZGExpressCaptureFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExpressCaptureFeatureViewController.h; sourceTree = "<group>"; };
+		86A2E87426A6AF5400F937AE /* ZGExpressCaptureFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExpressCaptureFeatureViewController.m; sourceTree = "<group>"; };
+		86A2E87926A6B78F00F937AE /* ZGExpressCaptureBasicBeautyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExpressCaptureBasicBeautyViewController.h; sourceTree = "<group>"; };
+		86A2E87A26A6B78F00F937AE /* ZGExpressCaptureBasicBeautyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExpressCaptureBasicBeautyViewController.m; sourceTree = "<group>"; };
+		86A2E87C26A6B88B00F937AE /* ZGExpressCapturePendantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGExpressCapturePendantViewController.h; sourceTree = "<group>"; };
+		86A2E87D26A6B88B00F937AE /* ZGExpressCapturePendantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGExpressCapturePendantViewController.m; sourceTree = "<group>"; };
+		86A2E88326A6C0B500F937AE /* ZGExpressProcessFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExpressProcessFeatureViewController.h; sourceTree = "<group>"; };
+		86A2E88526A6C0B500F937AE /* ZGExpressProcessPendantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExpressProcessPendantViewController.m; sourceTree = "<group>"; };
+		86A2E88626A6C0B500F937AE /* ZGExpressProcessPendantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExpressProcessPendantViewController.h; sourceTree = "<group>"; };
+		86A2E88726A6C0B500F937AE /* ZGExpressProcessFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExpressProcessFeatureViewController.m; sourceTree = "<group>"; };
+		86A2E88926A6C0B500F937AE /* ZGExpressProcessBasicBeautyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGExpressProcessBasicBeautyViewController.m; sourceTree = "<group>"; };
+		86A2E88A26A6C0B500F937AE /* ZGExpressProcessBasicBeautyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGExpressProcessBasicBeautyViewController.h; sourceTree = "<group>"; };
+		86A2E89026A82A0000F937AE /* KeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyCenter.m; sourceTree = "<group>"; };
+		86A2E89126A82A0100F937AE /* KeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyCenter.h; sourceTree = "<group>"; };
+		86B67EC2265295E000BE7AA1 /* ZGBasicBeautySettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautySettingController.h; sourceTree = "<group>"; };
+		86B67EC3265295E000BE7AA1 /* ZGBasicBeautySettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautySettingController.m; sourceTree = "<group>"; };
+		86B67ECB2652997300BE7AA1 /* ZGBasicBeautyCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautyCellViewModel.h; sourceTree = "<group>"; };
+		86B67ECC2652997300BE7AA1 /* ZGBasicBeautyCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautyCellViewModel.m; sourceTree = "<group>"; };
+		86B67ED126529A0000BE7AA1 /* ZGBasicBeautySettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautySettingCell.h; sourceTree = "<group>"; };
+		86B67ED226529A0000BE7AA1 /* ZGBasicBeautySettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautySettingCell.m; sourceTree = "<group>"; };
+		86B67ED326529A0000BE7AA1 /* ZGBasicBeautySettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZGBasicBeautySettingCell.xib; sourceTree = "<group>"; };
+		86B67ED72652A78F00BE7AA1 /* ZGBasicBeautyParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautyParam.h; sourceTree = "<group>"; };
+		86B67ED82652A78F00BE7AA1 /* ZGBasicBeautyParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautyParam.m; sourceTree = "<group>"; };
+		86B67EDA2652BD7400BE7AA1 /* ZGBasicBeautyDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautyDataSource.h; sourceTree = "<group>"; };
+		86B67EDB2652BD7400BE7AA1 /* ZGBasicBeautyDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautyDataSource.m; sourceTree = "<group>"; };
+		86BF270D27152F1000629882 /* ZegoEffectsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZegoEffectsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BF270F27152F1000629882 /* ZegoEffectsExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZegoEffectsExampleApp.swift; sourceTree = "<group>"; };
+		86BF271127152F1000629882 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		86BF271327152F1100629882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86BF271627152F1100629882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86BF271827152F1100629882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86BF271C27152F3B00629882 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86BF271D27152F3B00629882 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		86BF272027152F3B00629882 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		86BF272127152F3B00629882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86BF272227152F3B00629882 /* FeatureInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureInfo.swift; sourceTree = "<group>"; };
+		86BF272327152F3B00629882 /* ZegoLicense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZegoLicense.swift; sourceTree = "<group>"; };
+		86BF272627152F3B00629882 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
+		86BF272727152F3B00629882 /* ZegoEffectsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZegoEffectsCoordinator.swift; sourceTree = "<group>"; };
+		86BF272927152F3B00629882 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86BF272A27152F3B00629882 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		86BF272B27152F3B00629882 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86BF272C27152F3B00629882 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		86BF272D27152F3B00629882 /* ZegoEffectsExampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZegoEffectsExampleApp.swift; sourceTree = "<group>"; };
+		86BF272F27152F3B00629882 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		86BF273027152F3B00629882 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
+		86BF273227152F3B00629882 /* CameraServiceCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraServiceCoordinator.swift; sourceTree = "<group>"; };
+		86BF273327152F3B00629882 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		86BF273427152F3B00629882 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		86BF273527152F3B00629882 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		86BF273627152F3B00629882 /* ToolBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+		86CCC4612786A58E001BBB34 /* MakeupResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MakeupResources; sourceTree = "<group>"; };
+		86CCC4622786A58E001BBB34 /* CommonResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonResources.bundle; sourceTree = "<group>"; };
+		86CCC4632786A58E001BBB34 /* ColorfulStyleResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ColorfulStyleResources; sourceTree = "<group>"; };
+		86DCA5B626DA7C8800A5756C /* pendantWatermelon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantWatermelon.bundle; sourceTree = "<group>"; };
+		86DCA5B826DA7C8E00A5756C /* pendantCat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantCat.bundle; sourceTree = "<group>"; };
+		86E2FA4E263595AF001C87B9 /* ZGCaptureDeviceCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGCaptureDeviceCamera.m; sourceTree = "<group>"; };
+		86E2FA51263595C9001C87B9 /* ZGCaptureDeviceCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCaptureDeviceCamera.h; sourceTree = "<group>"; };
+		86E2FA522635960C001C87B9 /* ZGCaptureDeviceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGCaptureDeviceProtocol.h; sourceTree = "<group>"; };
+		86E2FA862636CCE5001C87B9 /* ZGPortraitSegmentationSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPortraitSegmentationSettingTableViewController.h; sourceTree = "<group>"; };
+		86E2FA872636CCE5001C87B9 /* ZGPortraitSegmentationSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPortraitSegmentationSettingTableViewController.m; sourceTree = "<group>"; };
+		86E6970A2653FC5E00EE3071 /* ZGChromaKeySettingDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChromaKeySettingDataSource.h; sourceTree = "<group>"; };
+		86E6970B2653FC5E00EE3071 /* ZGChromaKeySettingDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChromaKeySettingDataSource.m; sourceTree = "<group>"; };
+		86EEE86A2681B92F0073BF25 /* ZGBasicBeautyAdvancedCellViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautyAdvancedCellViewModel.h; sourceTree = "<group>"; };
+		86EEE86B2681B92F0073BF25 /* ZGBasicBeautyAdvancedCellViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautyAdvancedCellViewModel.m; sourceTree = "<group>"; };
+		86EEE86D2681BF070073BF25 /* ZGBasicBeautyAdvancedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautyAdvancedModel.h; sourceTree = "<group>"; };
+		86EEE86E2681BF070073BF25 /* ZGBasicBeautyAdvancedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGBasicBeautyAdvancedModel.m; sourceTree = "<group>"; };
+		86EEE8702681C12F0073BF25 /* ZGEffectsOnlyEngineManager+AdvancedBeauty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZGEffectsOnlyEngineManager+AdvancedBeauty.h"; sourceTree = "<group>"; };
+		86EEE8712681C12F0073BF25 /* ZGEffectsOnlyEngineManager+AdvancedBeauty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZGEffectsOnlyEngineManager+AdvancedBeauty.m"; sourceTree = "<group>"; };
+		86F5D0B12643D73C003C2C85 /* APITest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = APITest.storyboard; sourceTree = "<group>"; };
+		86F5D0B32644DC48003C2C85 /* ZGAPITestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAPITestViewController.h; sourceTree = "<group>"; };
+		86F5D0B42644DC48003C2C85 /* ZGAPITestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAPITestViewController.m; sourceTree = "<group>"; };
+		86F5D0B62644DC5E003C2C85 /* ZGAPITestSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGAPITestSettingTableViewController.h; sourceTree = "<group>"; };
+		86F5D0B72644DC5E003C2C85 /* ZGAPITestSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGAPITestSettingTableViewController.m; sourceTree = "<group>"; };
+		86F5D0B92644F8EC003C2C85 /* ZGHomeSettingTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGHomeSettingTableViewController.h; sourceTree = "<group>"; };
+		86F5D0BA2644F8EC003C2C85 /* ZGHomeSettingTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGHomeSettingTableViewController.m; sourceTree = "<group>"; };
+		86F7D5E426535A8E00A32E79 /* ZGBasicBeautyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGBasicBeautyConstants.h; sourceTree = "<group>"; };
+		86F7D5EA2653724600A32E79 /* ZGPendantDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPendantDataSource.h; sourceTree = "<group>"; };
+		86F7D5EB2653724600A32E79 /* ZGPendantDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPendantDataSource.m; sourceTree = "<group>"; };
+		86F7D5ED2653743F00A32E79 /* ZGPendantConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPendantConstants.h; sourceTree = "<group>"; };
+		86F7D5EE2653B4D800A32E79 /* ZGChromaKeySettingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGChromaKeySettingViewModel.h; sourceTree = "<group>"; };
+		86F7D5EF2653B4D800A32E79 /* ZGChromaKeySettingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGChromaKeySettingViewModel.m; sourceTree = "<group>"; };
+		A4F740E92252EF327D3AF0E1 /* Pods-ZegoEffectsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZegoEffectsExample.debug.xcconfig"; path = "Target Support Files/Pods-ZegoEffectsExample/Pods-ZegoEffectsExample.debug.xcconfig"; sourceTree = "<group>"; };
+		FCD757F984A4758799811C30 /* Pods_ZegoEffectsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZegoEffectsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8600EF732635154700A79D8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1FD886DE449C64907CD105C /* Pods_ZegoEffectsExampleLegacy.framework in Frameworks */,
+				8669787A26F357750095D577 /* ZegoEffects.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86BF270A27152F1000629882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86BF274C27152FFB00629882 /* ZegoEffects.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FB401CE3246D16F5999C42C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCD757F984A4758799811C30 /* Pods_ZegoEffectsExample.framework */,
+				107BEB97ADE0E26F7EA21040 /* Pods_ZegoEffectsExampleLegacy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69441FDE3448F0851DD29D6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4F740E92252EF327D3AF0E1 /* Pods-ZegoEffectsExample.debug.xcconfig */,
+				76B84172D5B20D8D6E60AF78 /* Pods-ZegoEffectsExample.release.xcconfig */,
+				36A9BE8FD8DA1EA2EEF69906 /* Pods-ZegoEffectsExampleLegacy.debug.xcconfig */,
+				716BE552D8557F9B2C349C7E /* Pods-ZegoEffectsExampleLegacy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8600EF772635154700A79D8D /* ZegoEffectsExampleLegacy */ = {
+			isa = PBXGroup;
+			children = (
+				865648C326C4FF0D004D54C1 /* Network */,
+				868C95DC2654F8DA009E9444 /* EffectsEngineManager */,
+				8600EF9D2635521100A79D8D /* EffectsOnly */,
+				86A2E86526A6795D00F937AE /* EffectsForExpress */,
+				86E2FA542636A6BB001C87B9 /* Helper */,
+				8600EF99263551B800A79D8D /* HomePage */,
+				8600EF782635154700A79D8D /* AppDelegate.h */,
+				8600EF792635154700A79D8D /* AppDelegate.m */,
+				868C95DB2654F617009E9444 /* PrefixHeader.pch */,
+				8600EF842635154800A79D8D /* Assets.xcassets */,
+				8600EF862635154800A79D8D /* LaunchScreen.storyboard */,
+				8600EF892635154800A79D8D /* Info.plist */,
+				8600EF8A2635154800A79D8D /* main.m */,
+				8600EFB6263568D200A79D8D /* ZegoLicense.h */,
+				8600EFB7263568D200A79D8D /* ZegoLicense.m */,
+			);
+			path = ZegoEffectsExampleLegacy;
+			sourceTree = "<group>";
+		};
+		8600EF99263551B800A79D8D /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				86F5D0B02643D71A003C2C85 /* APITest */,
+				8600EF812635154700A79D8D /* Main.storyboard */,
+				8600EFA52635623100A79D8D /* ZGHomeViewController.h */,
+				8600EFA62635623100A79D8D /* ZGHomeViewController.m */,
+				86F5D0B92644F8EC003C2C85 /* ZGHomeSettingTableViewController.h */,
+				86F5D0BA2644F8EC003C2C85 /* ZGHomeSettingTableViewController.m */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		8600EF9D2635521100A79D8D /* EffectsOnly */ = {
+			isa = PBXGroup;
+			children = (
+				8618AE2926E9D0D7004A3310 /* Refactor */,
+				8600EF9E2635531700A79D8D /* Features */,
+				8600EF9A263551B800A79D8D /* ZGEffectsOnlyRootViewController.h */,
+				8600EF9B263551B800A79D8D /* ZGEffectsOnlyRootViewController.m */,
+				862A086B265D2BB500D5B590 /* ZegoEffectOnlyDefines.h */,
+			);
+			path = EffectsOnly;
+			sourceTree = "<group>";
+		};
+		8600EF9E2635531700A79D8D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8670A0F9271FEC0F002411D0 /* StyleMakeup */,
+				864576DF267AEAE4004A8776 /* Filter */,
+				8674FA16263D06BF00D242CB /* BasicBeauty */,
+				86485687264D07C300EE6C43 /* Pendant */,
+				8674FA08263BA9CA00D242CB /* FaceDetection */,
+				8669787426F1D4AC0095D577 /* HighPerformanceFaceDetection */,
+				8600EF9F2635531E00A79D8D /* PortraitSegmentation */,
+				863842682637B27700858AE5 /* ChromaKey */,
+				86725C05265273B600DFB28B /* ZGFeatureViewController.h */,
+				86725C06265273B600DFB28B /* ZGFeatureViewController.m */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8600EF9F2635531E00A79D8D /* PortraitSegmentation */ = {
+			isa = PBXGroup;
+			children = (
+				868C95D22654F1DB009E9444 /* Main */,
+				868C95D12654F1C8009E9444 /* Setting */,
+			);
+			path = PortraitSegmentation;
+			sourceTree = "<group>";
+		};
+		861391FF260B2AF10032EA98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8687CC692685E045006E22E6 /* Pendants */,
+				86139232260BC6DA0032EA98 /* background_big_sur.jpg */,
+				86166327264D614400918C1B /* Models */,
+				86166322264D614400918C1B /* Resources */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		86166322264D614400918C1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86CCC4632786A58E001BBB34 /* ColorfulStyleResources */,
+				86CCC4622786A58E001BBB34 /* CommonResources.bundle */,
+				86CCC4612786A58E001BBB34 /* MakeupResources */,
+				86166323264D614400918C1B /* FaceWhiteningResources.bundle */,
+				86166324264D614400918C1B /* TeethWhiteningResources.bundle */,
+				86166325264D614400918C1B /* RosyResources.bundle */,
+				86166326264D614400918C1B /* PendantResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		86166327264D614400918C1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8661BEFF26EF4F7C00BC073E /* FaceDetectionModel.model */,
+				8661BF0026EF4F7C00BC073E /* SegmentationModel.model */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8618AE2926E9D0D7004A3310 /* Refactor */ = {
+			isa = PBXGroup;
+			children = (
+				8618AE2A26E9D115004A3310 /* ZegoItemTypeDefines.h */,
+				8618AE2B26E9D161004A3310 /* ZegoItemCellVM.h */,
+				8618AE2C26E9D161004A3310 /* ZegoItemCellVM.m */,
+				8618AE2E26E9D211004A3310 /* ZegoItemLibrary.h */,
+				8618AE2F26E9D211004A3310 /* ZegoItemLibrary.m */,
+				8618AE3126E9D44C004A3310 /* ZegoItemCell.h */,
+				8618AE3226E9D44C004A3310 /* ZegoItemCell.m */,
+			);
+			path = Refactor;
+			sourceTree = "<group>";
+		};
+		862A081B265BF4C800D5B590 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				862A082E265BF81A00D5B590 /* ZGPortraitBgVmStaticFactory.h */,
+				862A082F265BF81A00D5B590 /* ZGPortraitBgVmStaticFactory.m */,
+				862A081F265BF54400D5B590 /* ZGPortraitBgViewModel.h */,
+				862A0820265BF54400D5B590 /* ZGPortraitBgViewModel.m */,
+				862A085E265CE11D00D5B590 /* ZGPortraitMosaicViewModel.h */,
+				862A085F265CE11D00D5B590 /* ZGPortraitMosaicViewModel.m */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		862A0861265D2B4500D5B590 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				862A0862265D2B5B00D5B590 /* ZGChromaKeyBgVmStaticFactory.h */,
+				862A0863265D2B5B00D5B590 /* ZGChromaKeyBgVmStaticFactory.m */,
+				862A086C265D2C5A00D5B590 /* ZGChromaKeyBgViewModel.h */,
+				862A086D265D2C5A00D5B590 /* ZGChromaKeyBgViewModel.m */,
+				862A0870265D327D00D5B590 /* ZGChromaKeyMosaicViewModel.h */,
+				862A086F265D327D00D5B590 /* ZGChromaKeyMosaicViewModel.m */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		863842682637B27700858AE5 /* ChromaKey */ = {
+			isa = PBXGroup;
+			children = (
+				868C95D42654F1ED009E9444 /* Main */,
+				868C95D52654F1F5009E9444 /* Setting */,
+			);
+			path = ChromaKey;
+			sourceTree = "<group>";
+		};
+		863842752637BCE000858AE5 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				863842762637BD0F00858AE5 /* ZegoHudManager.h */,
+				863842772637BD0F00858AE5 /* ZegoHudManager.m */,
+				863842732637BCD200858AE5 /* MBProgressHUD.h */,
+				863842722637BCD200858AE5 /* MBProgressHUD.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		864576DF267AEAE4004A8776 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				864576E0267AEAED004A8776 /* Main */,
+				864576E1267AEAF3004A8776 /* Setting */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		864576E0267AEAED004A8776 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				864576E2267AEB0C004A8776 /* ZGFilterViewController.h */,
+				864576E3267AEB0C004A8776 /* ZGFilterViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		864576E1267AEAF3004A8776 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				864576ED267AF31D004A8776 /* View */,
+				864576EC267AF316004A8776 /* Model */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		864576EC267AF316004A8776 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				864576FA267AF62B004A8776 /* ZGFilterModel.h */,
+				864576FB267AF62B004A8776 /* ZGFilterModel.m */,
+				864576F7267AF4C1004A8776 /* ZGFilterDataSource.h */,
+				864576F8267AF4C1004A8776 /* ZGFilterDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		864576ED267AF31D004A8776 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				864576FD267AFDF6004A8776 /* ZGFilterSettingViewController.h */,
+				864576FE267AFDF6004A8776 /* ZGFilterSettingViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86485687264D07C300EE6C43 /* Pendant */ = {
+			isa = PBXGroup;
+			children = (
+				86F7D5E62653714900A32E79 /* Main */,
+				86F7D5E72653716A00A32E79 /* Setting */,
+			);
+			path = Pendant;
+			sourceTree = "<group>";
+		};
+		865648C326C4FF0D004D54C1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				865648C726C4FF0D004D54C1 /* Api */,
+				865648C626C4FF0D004D54C1 /* ZGEffectsBaseRequest.h */,
+				865648C426C4FF0D004D54C1 /* ZGEffectsBaseRequest.m */,
+				865648C526C4FF0D004D54C1 /* ZGEffectsDataProvider.h */,
+				865648CA26C4FF0D004D54C1 /* ZGEffectsDataProvider.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		865648C726C4FF0D004D54C1 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				865648C826C4FF0D004D54C1 /* ZGLicenseValidationApi.h */,
+				865648C926C4FF0D004D54C1 /* ZGLicenseValidationApi.m */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		866553AC25ED1774000C45A9 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				8669787826F357340095D577 /* ZegoEffects.xcframework */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		8669787426F1D4AC0095D577 /* HighPerformanceFaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				8669787526F1D5CF0095D577 /* ZGHighPfmFaceDetectionVC.h */,
+				8669787626F1D5CF0095D577 /* ZGHighPfmFaceDetectionVC.m */,
+			);
+			path = HighPerformanceFaceDetection;
+			sourceTree = "<group>";
+		};
+		8670A0F9271FEC0F002411D0 /* StyleMakeup */ = {
+			isa = PBXGroup;
+			children = (
+				8670A0FB271FEC40002411D0 /* Setting */,
+				8670A0FA271FEC26002411D0 /* Main */,
+			);
+			path = StyleMakeup;
+			sourceTree = "<group>";
+		};
+		8670A0FA271FEC26002411D0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8670A0FE271FEC9D002411D0 /* ZGStyleMakeupViewController.h */,
+				8670A0FF271FEC9D002411D0 /* ZGStyleMakeupViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8670A0FB271FEC40002411D0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8670A0FD271FEC60002411D0 /* Model */,
+				8670A0FC271FEC53002411D0 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8670A0FC271FEC53002411D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8670A104271FFDE2002411D0 /* ZGStyleMakeupStttingViewController.h */,
+				8670A105271FFDE2002411D0 /* ZGStyleMakeupStttingViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8670A0FD271FEC60002411D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8674FA08263BA9CA00D242CB /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				868C95D62654F207009E9444 /* Main */,
+				868C95D72654F20B009E9444 /* Setting */,
+			);
+			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		8674FA16263D06BF00D242CB /* BasicBeauty */ = {
+			isa = PBXGroup;
+			children = (
+				868C95D32654F1E6009E9444 /* Main */,
+				86F7D5E526535DAB00A32E79 /* BasicBeautySetting */,
+			);
+			path = BasicBeauty;
+			sourceTree = "<group>";
+		};
+		8687CC692685E045006E22E6 /* Pendants */ = {
+			isa = PBXGroup;
+			children = (
+				86DCA5B826DA7C8E00A5756C /* pendantCat.bundle */,
+				86DCA5B626DA7C8800A5756C /* pendantWatermelon.bundle */,
+				8687CC6A2685E045006E22E6 /* pendantGirl.bundle */,
+				8687CC6B2685E045006E22E6 /* pendantFacefilm.bundle */,
+				8687CC6C2685E045006E22E6 /* pendantBaby.bundle */,
+				8687CC6F2685E045006E22E6 /* pendantDive.bundle */,
+				8687CC702685E045006E22E6 /* pendantDeer.bundle */,
+				8687CC712685E045006E22E6 /* pendantClown.bundle */,
+				8687CC722685E045006E22E6 /* pendantAnimal.bundle */,
+			);
+			path = Pendants;
+			sourceTree = "<group>";
+		};
+		868C95C82654EB27009E9444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8600EFA02635534D00A79D8D /* PortraitSegmentation.storyboard */,
+				86E2FA862636CCE5001C87B9 /* ZGPortraitSegmentationSettingTableViewController.h */,
+				86E2FA872636CCE5001C87B9 /* ZGPortraitSegmentationSettingTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		868C95CA2654EB34009E9444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				862A081B265BF4C800D5B590 /* Background */,
+				868C95C22654BB26009E9444 /* ZGPortraitSegSettingViewModel.h */,
+				868C95C32654BB26009E9444 /* ZGPortraitSegSettingViewModel.m */,
+				868C95C52654E7FA009E9444 /* ZGPortraitSegSettingDataSource.h */,
+				868C95C62654E7FA009E9444 /* ZGPortraitSegSettingDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		868C95CF2654F045009E9444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86F7D5EE2653B4D800A32E79 /* ZGChromaKeySettingViewModel.h */,
+				86F7D5EF2653B4D800A32E79 /* ZGChromaKeySettingViewModel.m */,
+				86E6970A2653FC5E00EE3071 /* ZGChromaKeySettingDataSource.h */,
+				86E6970B2653FC5E00EE3071 /* ZGChromaKeySettingDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		868C95D02654F04C009E9444 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				863842692637B29F00858AE5 /* ChromaKey.storyboard */,
+				8638426B2637B2BD00858AE5 /* ZGChromaKeySettingTableViewController.h */,
+				8638426C2637B2BD00858AE5 /* ZGChromaKeySettingTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		868C95D12654F1C8009E9444 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				868C95CA2654EB34009E9444 /* Model */,
+				868C95C82654EB27009E9444 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		868C95D22654F1DB009E9444 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8600EFA22635536600A79D8D /* ZGPortraitSegmentationViewController.h */,
+				8600EFA32635536600A79D8D /* ZGPortraitSegmentationViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		868C95D32654F1E6009E9444 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8674FA1C263D071600D242CB /* ZGBasicBeautyViewController.h */,
+				8674FA1D263D071600D242CB /* ZGBasicBeautyViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		868C95D42654F1ED009E9444 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8638426E2637B2D000858AE5 /* ZGChromaKeyViewController.h */,
+				8638426F2637B2D000858AE5 /* ZGChromaKeyViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		868C95D52654F1F5009E9444 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				862A0861265D2B4500D5B590 /* Background */,
+				868C95CF2654F045009E9444 /* Model */,
+				868C95D02654F04C009E9444 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		868C95D62654F207009E9444 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8674FA0D263BAC0200D242CB /* ZGFaceDetectionViewController.h */,
+				8674FA0E263BAC0200D242CB /* ZGFaceDetectionViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		868C95D72654F20B009E9444 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8674FA0B263BABC200D242CB /* FaceDetection.storyboard */,
+				8674FA10263BAC1700D242CB /* ZGFaceDetectionSettingTableViewController.h */,
+				8674FA11263BAC1700D242CB /* ZGFaceDetectionSettingTableViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		868C95DC2654F8DA009E9444 /* EffectsEngineManager */ = {
+			isa = PBXGroup;
+			children = (
+				8600EFB32635661900A79D8D /* ZGEffectsOnlyEngineManager.h */,
+				8600EFB42635661900A79D8D /* ZGEffectsOnlyEngineManager.m */,
+				868C95DD2654F8EB009E9444 /* Category */,
+			);
+			path = EffectsEngineManager;
+			sourceTree = "<group>";
+		};
+		868C95DD2654F8EB009E9444 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				86EEE8702681C12F0073BF25 /* ZGEffectsOnlyEngineManager+AdvancedBeauty.h */,
+				86EEE8712681C12F0073BF25 /* ZGEffectsOnlyEngineManager+AdvancedBeauty.m */,
+				8661BEF326EB055100BC073E /* ZGEffectsOnlyEngineManager+Beauty.h */,
+				8661BEF426EB055100BC073E /* ZGEffectsOnlyEngineManager+Beauty.m */,
+				868C95CB2654EB9F009E9444 /* ZGEffectsOnlyEngineManager+PortraitSeg.h */,
+				868C95CC2654EB9F009E9444 /* ZGEffectsOnlyEngineManager+PortraitSeg.m */,
+				868C95D82654F32C009E9444 /* ZGEffectsOnlyEngineManager+ChromaKey.h */,
+				868C95D92654F32C009E9444 /* ZGEffectsOnlyEngineManager+ChromaKey.m */,
+				8616633E264D63C900918C1B /* ZGEffectsOnlyEngineManager+Pendant.h */,
+				8616633F264D63C900918C1B /* ZGEffectsOnlyEngineManager+Pendant.m */,
+				864576E5267AEB33004A8776 /* ZGEffectsOnlyEngineManager+Filter.h */,
+				864576E6267AEB33004A8776 /* ZGEffectsOnlyEngineManager+Filter.m */,
+				8670A101271FF260002411D0 /* ZGEffectsOnlyEngineManager+StyleMakeup.h */,
+				8670A102271FF260002411D0 /* ZGEffectsOnlyEngineManager+StyleMakeup.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		86A2E86526A6795D00F937AE /* EffectsForExpress */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E89126A82A0100F937AE /* KeyCenter.h */,
+				86A2E89026A82A0000F937AE /* KeyCenter.m */,
+				86A2E86A26A6A88B00F937AE /* ZGEffectsExpressRootViewController.h */,
+				86A2E86B26A6A88B00F937AE /* ZGEffectsExpressRootViewController.m */,
+				86A2E88026A6C08B00F937AE /* CustomVideoProcess */,
+				86A2E87F26A6C07500F937AE /* CustomVideoCapture */,
+			);
+			path = EffectsForExpress;
+			sourceTree = "<group>";
+		};
+		86A2E86D26A6AD4100F937AE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E86F26A6ADAF00F937AE /* Pendant */,
+				86A2E86E26A6AD5700F937AE /* BasicBeauty */,
+				86A2E87326A6AF5400F937AE /* ZGExpressCaptureFeatureViewController.h */,
+				86A2E87426A6AF5400F937AE /* ZGExpressCaptureFeatureViewController.m */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		86A2E86E26A6AD5700F937AE /* BasicBeauty */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E87926A6B78F00F937AE /* ZGExpressCaptureBasicBeautyViewController.h */,
+				86A2E87A26A6B78F00F937AE /* ZGExpressCaptureBasicBeautyViewController.m */,
+			);
+			path = BasicBeauty;
+			sourceTree = "<group>";
+		};
+		86A2E86F26A6ADAF00F937AE /* Pendant */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E87C26A6B88B00F937AE /* ZGExpressCapturePendantViewController.h */,
+				86A2E87D26A6B88B00F937AE /* ZGExpressCapturePendantViewController.m */,
+			);
+			path = Pendant;
+			sourceTree = "<group>";
+		};
+		86A2E87F26A6C07500F937AE /* CustomVideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E86D26A6AD4100F937AE /* Features */,
+			);
+			path = CustomVideoCapture;
+			sourceTree = "<group>";
+		};
+		86A2E88026A6C08B00F937AE /* CustomVideoProcess */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E88226A6C0B500F937AE /* Features */,
+			);
+			path = CustomVideoProcess;
+			sourceTree = "<group>";
+		};
+		86A2E88226A6C0B500F937AE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E88426A6C0B500F937AE /* Pendant */,
+				86A2E88826A6C0B500F937AE /* BasicBeauty */,
+				86A2E88326A6C0B500F937AE /* ZGExpressProcessFeatureViewController.h */,
+				86A2E88726A6C0B500F937AE /* ZGExpressProcessFeatureViewController.m */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		86A2E88426A6C0B500F937AE /* Pendant */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E88626A6C0B500F937AE /* ZGExpressProcessPendantViewController.h */,
+				86A2E88526A6C0B500F937AE /* ZGExpressProcessPendantViewController.m */,
+			);
+			path = Pendant;
+			sourceTree = "<group>";
+		};
+		86A2E88826A6C0B500F937AE /* BasicBeauty */ = {
+			isa = PBXGroup;
+			children = (
+				86A2E88A26A6C0B500F937AE /* ZGExpressProcessBasicBeautyViewController.h */,
+				86A2E88926A6C0B500F937AE /* ZGExpressProcessBasicBeautyViewController.m */,
+			);
+			path = BasicBeauty;
+			sourceTree = "<group>";
+		};
+		86B67ED62652A73500BE7AA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86F7D5E426535A8E00A32E79 /* ZGBasicBeautyConstants.h */,
+				86B67ED72652A78F00BE7AA1 /* ZGBasicBeautyParam.h */,
+				86B67ED82652A78F00BE7AA1 /* ZGBasicBeautyParam.m */,
+				86B67EDA2652BD7400BE7AA1 /* ZGBasicBeautyDataSource.h */,
+				86B67EDB2652BD7400BE7AA1 /* ZGBasicBeautyDataSource.m */,
+				86B67ECB2652997300BE7AA1 /* ZGBasicBeautyCellViewModel.h */,
+				86B67ECC2652997300BE7AA1 /* ZGBasicBeautyCellViewModel.m */,
+				86EEE86D2681BF070073BF25 /* ZGBasicBeautyAdvancedModel.h */,
+				86EEE86E2681BF070073BF25 /* ZGBasicBeautyAdvancedModel.m */,
+				86EEE86A2681B92F0073BF25 /* ZGBasicBeautyAdvancedCellViewModel.h */,
+				86EEE86B2681B92F0073BF25 /* ZGBasicBeautyAdvancedCellViewModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86B67EDD2652C0E700BE7AA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86B67EC2265295E000BE7AA1 /* ZGBasicBeautySettingController.h */,
+				86B67EC3265295E000BE7AA1 /* ZGBasicBeautySettingController.m */,
+				86B67ED126529A0000BE7AA1 /* ZGBasicBeautySettingCell.h */,
+				86B67ED226529A0000BE7AA1 /* ZGBasicBeautySettingCell.m */,
+				86B67ED326529A0000BE7AA1 /* ZGBasicBeautySettingCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86BD46A325ECF8D30004F6C0 = {
+			isa = PBXGroup;
+			children = (
+				866553AC25ED1774000C45A9 /* Libs */,
+				861391FF260B2AF10032EA98 /* Resources */,
+				8600EF772635154700A79D8D /* ZegoEffectsExampleLegacy */,
+				86BF270E27152F1000629882 /* ZegoEffectsExample */,
+				86BD46AD25ECF8D30004F6C0 /* Products */,
+				69441FDE3448F0851DD29D6A /* Pods */,
+				2FB401CE3246D16F5999C42C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86BD46AD25ECF8D30004F6C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8600EF762635154700A79D8D /* ZegoEffectsExampleLegacy.app */,
+				86BF270D27152F1000629882 /* ZegoEffectsExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86BF270E27152F1000629882 /* ZegoEffectsExample */ = {
+			isa = PBXGroup;
+			children = (
+				86BF272127152F3B00629882 /* Assets.xcassets */,
+				86BF271D27152F3B00629882 /* ContentView.swift */,
+				86BF271E27152F3B00629882 /* en.lproj */,
+				86BF272227152F3B00629882 /* FeatureInfo.swift */,
+				86BF272E27152F3B00629882 /* Helper */,
+				86BF272B27152F3B00629882 /* Info.plist */,
+				86BF271C27152F3B00629882 /* LaunchScreen.storyboard */,
+				86BF272827152F3B00629882 /* Preview Content */,
+				86BF272A27152F3B00629882 /* PreviewView.swift */,
+				86BF272C27152F3B00629882 /* SettingView.swift */,
+				86BF273627152F3B00629882 /* ToolBarView.swift */,
+				86BF272727152F3B00629882 /* ZegoEffectsCoordinator.swift */,
+				86BF272D27152F3B00629882 /* ZegoEffectsExampleApp.swift */,
+				86BF272327152F3B00629882 /* ZegoLicense.swift */,
+				86BF272427152F3B00629882 /* zh-Hans.lproj */,
+				86BF270F27152F1000629882 /* ZegoEffectsExampleApp.swift */,
+				86BF271127152F1000629882 /* ContentView.swift */,
+				86BF271327152F1100629882 /* Assets.xcassets */,
+				86BF271827152F1100629882 /* Info.plist */,
+				86BF271527152F1100629882 /* Preview Content */,
+			);
+			path = ZegoEffectsExample;
+			sourceTree = "<group>";
+		};
+		86BF271527152F1100629882 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				86BF271627152F1100629882 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86BF271E27152F3B00629882 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				86BF271F27152F3B00629882 /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		86BF272427152F3B00629882 /* zh-Hans.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				86BF272527152F3B00629882 /* Localizable.strings */,
+			);
+			path = "zh-Hans.lproj";
+			sourceTree = "<group>";
+		};
+		86BF272827152F3B00629882 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				86BF272927152F3B00629882 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		86BF272E27152F3B00629882 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				86BF272F27152F3B00629882 /* Alert.swift */,
+				86BF273027152F3B00629882 /* PhotoHelper.swift */,
+				86BF273127152F3B00629882 /* Camera */,
+				86BF273427152F3B00629882 /* ActivityIndicator.swift */,
+				86BF273527152F3B00629882 /* HUD.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		86BF273127152F3B00629882 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				86BF273227152F3B00629882 /* CameraServiceCoordinator.swift */,
+				86BF273327152F3B00629882 /* CameraService.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		86E2FA4D263595A0001C87B9 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				86E2FA522635960C001C87B9 /* ZGCaptureDeviceProtocol.h */,
+				86E2FA51263595C9001C87B9 /* ZGCaptureDeviceCamera.h */,
+				86E2FA4E263595AF001C87B9 /* ZGCaptureDeviceCamera.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		86E2FA542636A6BB001C87B9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				863842752637BCE000858AE5 /* HUD */,
+				86E2FA4D263595A0001C87B9 /* Camera */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		86F5D0B02643D71A003C2C85 /* APITest */ = {
+			isa = PBXGroup;
+			children = (
+				86F5D0B12643D73C003C2C85 /* APITest.storyboard */,
+				86F5D0B32644DC48003C2C85 /* ZGAPITestViewController.h */,
+				86F5D0B42644DC48003C2C85 /* ZGAPITestViewController.m */,
+				86F5D0B62644DC5E003C2C85 /* ZGAPITestSettingTableViewController.h */,
+				86F5D0B72644DC5E003C2C85 /* ZGAPITestSettingTableViewController.m */,
+			);
+			path = APITest;
+			sourceTree = "<group>";
+		};
+		86F7D5E526535DAB00A32E79 /* BasicBeautySetting */ = {
+			isa = PBXGroup;
+			children = (
+				86B67ED62652A73500BE7AA1 /* Model */,
+				86B67EDD2652C0E700BE7AA1 /* View */,
+			);
+			path = BasicBeautySetting;
+			sourceTree = "<group>";
+		};
+		86F7D5E62653714900A32E79 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				86485688264D082B00EE6C43 /* ZGPendantViewController.h */,
+				86485689264D082B00EE6C43 /* ZGPendantViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		86F7D5E72653716A00A32E79 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				86F7D5E92653718100A32E79 /* Model */,
+				86F7D5E82653717B00A32E79 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		86F7D5E82653717B00A32E79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8648568B264D119F00EE6C43 /* ZGPendantSettingViewController.h */,
+				8648568C264D119F00EE6C43 /* ZGPendantSettingViewController.m */,
+				86485694264D182D00EE6C43 /* ZGPendantCell.h */,
+				86485695264D182D00EE6C43 /* ZGPendantCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86F7D5E92653718100A32E79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86485691264D17F500EE6C43 /* ZGPendantModel.h */,
+				86485692264D17F500EE6C43 /* ZGPendantModel.m */,
+				86F7D5EA2653724600A32E79 /* ZGPendantDataSource.h */,
+				86F7D5EB2653724600A32E79 /* ZGPendantDataSource.m */,
+				86F7D5ED2653743F00A32E79 /* ZGPendantConstants.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8600EF752635154700A79D8D /* ZegoEffectsExampleLegacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8600EF8E2635154800A79D8D /* Build configuration list for PBXNativeTarget "ZegoEffectsExampleLegacy" */;
+			buildPhases = (
+				E39A6221982EDF5DB8D823BD /* [CP] Check Pods Manifest.lock */,
+				8600EF722635154700A79D8D /* Sources */,
+				8600EF732635154700A79D8D /* Frameworks */,
+				8600EF742635154700A79D8D /* Resources */,
+				8600EF94263515B900A79D8D /* Embed Frameworks */,
+				DF8CF77457F3EF8D25F13DD8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZegoEffectsExampleLegacy;
+			productName = ZegoEffectsExampleLegacy;
+			productReference = 8600EF762635154700A79D8D /* ZegoEffectsExampleLegacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86BF270C27152F1000629882 /* ZegoEffectsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86BF271927152F1100629882 /* Build configuration list for PBXNativeTarget "ZegoEffectsExample" */;
+			buildPhases = (
+				86BF270927152F1000629882 /* Sources */,
+				86BF270A27152F1000629882 /* Frameworks */,
+				86BF270B27152F1000629882 /* Resources */,
+				86BF274E27152FFB00629882 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZegoEffectsExample;
+			productName = ZegoEffectsExample;
+			productReference = 86BF270D27152F1000629882 /* ZegoEffectsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86BD46A425ECF8D30004F6C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = Zego;
+				TargetAttributes = {
+					8600EF752635154700A79D8D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					86BF270C27152F1000629882 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 86BD46A725ECF8D30004F6C0 /* Build configuration list for PBXProject "ZegoEffectsExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 86BD46A325ECF8D30004F6C0;
+			productRefGroup = 86BD46AD25ECF8D30004F6C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8600EF752635154700A79D8D /* ZegoEffectsExampleLegacy */,
+				86BF270C27152F1000629882 /* ZegoEffectsExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8600EF742635154700A79D8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86DCA5B926DA7C8E00A5756C /* pendantCat.bundle in Resources */,
+				8638426A2637B29F00858AE5 /* ChromaKey.storyboard in Resources */,
+				8616632D264D614400918C1B /* FaceWhiteningResources.bundle in Resources */,
+				8600EF882635154800A79D8D /* LaunchScreen.storyboard in Resources */,
+				8687CC7B2685E045006E22E6 /* pendantAnimal.bundle in Resources */,
+				86166331264D614400918C1B /* RosyResources.bundle in Resources */,
+				86CCC4652786A58E001BBB34 /* CommonResources.bundle in Resources */,
+				8674FA0C263BABC200D242CB /* FaceDetection.storyboard in Resources */,
+				8600EFA12635534D00A79D8D /* PortraitSegmentation.storyboard in Resources */,
+				8600EF852635154800A79D8D /* Assets.xcassets in Resources */,
+				8687CC742685E045006E22E6 /* pendantFacefilm.bundle in Resources */,
+				86B67ED526529A0000BE7AA1 /* ZGBasicBeautySettingCell.xib in Resources */,
+				86166333264D614400918C1B /* PendantResources.bundle in Resources */,
+				86CCC4642786A58E001BBB34 /* MakeupResources in Resources */,
+				8661BF0126EF4F7C00BC073E /* FaceDetectionModel.model in Resources */,
+				8687CC732685E045006E22E6 /* pendantGirl.bundle in Resources */,
+				86CCC4662786A58E001BBB34 /* ColorfulStyleResources in Resources */,
+				8616632F264D614400918C1B /* TeethWhiteningResources.bundle in Resources */,
+				8687CC792685E045006E22E6 /* pendantDeer.bundle in Resources */,
+				8687CC752685E045006E22E6 /* pendantBaby.bundle in Resources */,
+				8687CC782685E045006E22E6 /* pendantDive.bundle in Resources */,
+				8600EF832635154700A79D8D /* Main.storyboard in Resources */,
+				86DCA5B726DA7C8800A5756C /* pendantWatermelon.bundle in Resources */,
+				86E2FA6A2636B7C5001C87B9 /* background_big_sur.jpg in Resources */,
+				8687CC7A2685E045006E22E6 /* pendantClown.bundle in Resources */,
+				86F5D0B22643D73C003C2C85 /* APITest.storyboard in Resources */,
+				8661BF0226EF4F7C00BC073E /* SegmentationModel.model in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86BF270B27152F1000629882 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF8CF77457F3EF8D25F13DD8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoEffectsExampleLegacy/Pods-ZegoEffectsExampleLegacy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZegoEffectsExampleLegacy/Pods-ZegoEffectsExampleLegacy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZegoEffectsExampleLegacy/Pods-ZegoEffectsExampleLegacy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E39A6221982EDF5DB8D823BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZegoEffectsExampleLegacy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8600EF722635154700A79D8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B67EC4265295E000BE7AA1 /* ZGBasicBeautySettingController.m in Sources */,
+				86F7D5EC2653724600A32E79 /* ZGPendantDataSource.m in Sources */,
+				86E2FA50263595AF001C87B9 /* ZGCaptureDeviceCamera.m in Sources */,
+				8648568D264D119F00EE6C43 /* ZGPendantSettingViewController.m in Sources */,
+				86B67EDC2652BD7400BE7AA1 /* ZGBasicBeautyDataSource.m in Sources */,
+				862A0821265BF54400D5B590 /* ZGPortraitBgViewModel.m in Sources */,
+				865648CB26C4FF0D004D54C1 /* ZGEffectsBaseRequest.m in Sources */,
+				8670A103271FF260002411D0 /* ZGEffectsOnlyEngineManager+StyleMakeup.m in Sources */,
+				8661BEF526EB055100BC073E /* ZGEffectsOnlyEngineManager+Beauty.m in Sources */,
+				862A0864265D2B5B00D5B590 /* ZGChromaKeyBgVmStaticFactory.m in Sources */,
+				864576FC267AF62B004A8776 /* ZGFilterModel.m in Sources */,
+				8618AE2D26E9D161004A3310 /* ZegoItemCellVM.m in Sources */,
+				868C95DA2654F32C009E9444 /* ZGEffectsOnlyEngineManager+ChromaKey.m in Sources */,
+				8674FA1E263D071600D242CB /* ZGBasicBeautyViewController.m in Sources */,
+				862A0871265D327D00D5B590 /* ZGChromaKeyMosaicViewModel.m in Sources */,
+				868C95CD2654EB9F009E9444 /* ZGEffectsOnlyEngineManager+PortraitSeg.m in Sources */,
+				86F7D5F02653B4D800A32E79 /* ZGChromaKeySettingViewModel.m in Sources */,
+				865648CD26C4FF0D004D54C1 /* ZGEffectsDataProvider.m in Sources */,
+				86A2E89226A82A0100F937AE /* KeyCenter.m in Sources */,
+				86A2E87E26A6B88B00F937AE /* ZGExpressCapturePendantViewController.m in Sources */,
+				86A2E87B26A6B78F00F937AE /* ZGExpressCaptureBasicBeautyViewController.m in Sources */,
+				86EEE8722681C12F0073BF25 /* ZGEffectsOnlyEngineManager+AdvancedBeauty.m in Sources */,
+				863842782637BD0F00858AE5 /* ZegoHudManager.m in Sources */,
+				868C95C72654E7FA009E9444 /* ZGPortraitSegSettingDataSource.m in Sources */,
+				8600EF7A2635154700A79D8D /* AppDelegate.m in Sources */,
+				86E2FA882636CCE5001C87B9 /* ZGPortraitSegmentationSettingTableViewController.m in Sources */,
+				864576F9267AF4C1004A8776 /* ZGFilterDataSource.m in Sources */,
+				86485696264D182D00EE6C43 /* ZGPendantCell.m in Sources */,
+				864576E4267AEB0C004A8776 /* ZGFilterViewController.m in Sources */,
+				8600EFB52635661900A79D8D /* ZGEffectsOnlyEngineManager.m in Sources */,
+				864576E7267AEB33004A8776 /* ZGEffectsOnlyEngineManager+Filter.m in Sources */,
+				8648568A264D082B00EE6C43 /* ZGPendantViewController.m in Sources */,
+				8600EFA72635623100A79D8D /* ZGHomeViewController.m in Sources */,
+				86B67ED92652A78F00BE7AA1 /* ZGBasicBeautyParam.m in Sources */,
+				8670A106271FFDE2002411D0 /* ZGStyleMakeupStttingViewController.m in Sources */,
+				8669787726F1D5CF0095D577 /* ZGHighPfmFaceDetectionVC.m in Sources */,
+				863842702637B2D000858AE5 /* ZGChromaKeyViewController.m in Sources */,
+				86EEE86C2681B92F0073BF25 /* ZGBasicBeautyAdvancedCellViewModel.m in Sources */,
+				862A0860265CE11D00D5B590 /* ZGPortraitMosaicViewModel.m in Sources */,
+				862A086E265D2C5A00D5B590 /* ZGChromaKeyBgViewModel.m in Sources */,
+				86166340264D63C900918C1B /* ZGEffectsOnlyEngineManager+Pendant.m in Sources */,
+				8638426D2637B2BD00858AE5 /* ZGChromaKeySettingTableViewController.m in Sources */,
+				86EEE86F2681BF070073BF25 /* ZGBasicBeautyAdvancedModel.m in Sources */,
+				8674FA0F263BAC0200D242CB /* ZGFaceDetectionViewController.m in Sources */,
+				86B67ECD2652997300BE7AA1 /* ZGBasicBeautyCellViewModel.m in Sources */,
+				863842742637BCD200858AE5 /* MBProgressHUD.m in Sources */,
+				86E6970C2653FC5E00EE3071 /* ZGChromaKeySettingDataSource.m in Sources */,
+				862A0830265BF81A00D5B590 /* ZGPortraitBgVmStaticFactory.m in Sources */,
+				86A2E88E26A6C0B500F937AE /* ZGExpressProcessFeatureViewController.m in Sources */,
+				86F5D0B52644DC48003C2C85 /* ZGAPITestViewController.m in Sources */,
+				8670A100271FEC9D002411D0 /* ZGStyleMakeupViewController.m in Sources */,
+				8674FA12263BAC1700D242CB /* ZGFaceDetectionSettingTableViewController.m in Sources */,
+				86F5D0B82644DC5E003C2C85 /* ZGAPITestSettingTableViewController.m in Sources */,
+				8600EFA42635536600A79D8D /* ZGPortraitSegmentationViewController.m in Sources */,
+				8618AE3326E9D44C004A3310 /* ZegoItemCell.m in Sources */,
+				86725C07265273B600DFB28B /* ZGFeatureViewController.m in Sources */,
+				86B67ED426529A0000BE7AA1 /* ZGBasicBeautySettingCell.m in Sources */,
+				865648CC26C4FF0D004D54C1 /* ZGLicenseValidationApi.m in Sources */,
+				86F5D0BB2644F8EC003C2C85 /* ZGHomeSettingTableViewController.m in Sources */,
+				868C95C42654BB26009E9444 /* ZGPortraitSegSettingViewModel.m in Sources */,
+				8600EF8B2635154800A79D8D /* main.m in Sources */,
+				8600EF9C263551B800A79D8D /* ZGEffectsOnlyRootViewController.m in Sources */,
+				864576FF267AFDF6004A8776 /* ZGFilterSettingViewController.m in Sources */,
+				8618AE3026E9D211004A3310 /* ZegoItemLibrary.m in Sources */,
+				8600EFB8263568D200A79D8D /* ZegoLicense.m in Sources */,
+				86A2E88F26A6C0B500F937AE /* ZGExpressProcessBasicBeautyViewController.m in Sources */,
+				86A2E87526A6AF5400F937AE /* ZGExpressCaptureFeatureViewController.m in Sources */,
+				86485693264D17F500EE6C43 /* ZGPendantModel.m in Sources */,
+				86A2E88D26A6C0B500F937AE /* ZGExpressProcessPendantViewController.m in Sources */,
+				86A2E86C26A6A88B00F937AE /* ZGEffectsExpressRootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86BF270927152F1000629882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86BF273E27152F3B00629882 /* ZegoEffectsCoordinator.swift in Sources */,
+				86BF273B27152F3B00629882 /* FeatureInfo.swift in Sources */,
+				86BF274327152F3B00629882 /* ZegoEffectsExampleApp.swift in Sources */,
+				86BF274027152F3B00629882 /* PreviewView.swift in Sources */,
+				86BF274827152F3B00629882 /* ActivityIndicator.swift in Sources */,
+				86BF274527152F3B00629882 /* PhotoHelper.swift in Sources */,
+				86BF274927152F3B00629882 /* HUD.swift in Sources */,
+				86BF271227152F1000629882 /* ContentView.swift in Sources */,
+				86BF274727152F3B00629882 /* CameraService.swift in Sources */,
+				86BF271027152F1000629882 /* ZegoEffectsExampleApp.swift in Sources */,
+				86BF274A27152F3B00629882 /* ToolBarView.swift in Sources */,
+				86BF274627152F3B00629882 /* CameraServiceCoordinator.swift in Sources */,
+				86BF274227152F3B00629882 /* SettingView.swift in Sources */,
+				86BF273827152F3B00629882 /* ContentView.swift in Sources */,
+				86BF274427152F3B00629882 /* Alert.swift in Sources */,
+				86BF273C27152F3B00629882 /* ZegoLicense.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8600EF812635154700A79D8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8600EF822635154700A79D8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8600EF862635154800A79D8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8600EF872635154800A79D8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		86BF271F27152F3B00629882 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86BF272027152F3B00629882 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		86BF272527152F3B00629882 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86BF272627152F3B00629882 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8600EF8C2635154800A79D8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A9BE8FD8DA1EA2EEF69906 /* Pods-ZegoEffectsExampleLegacy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y98YBP7T6D;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZegoEffectsExampleLegacy/PrefixHeader.pch";
+				INFOPLIST_FILE = ZegoEffectsExampleLegacy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoEffectsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8600EF8D2635154800A79D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716BE552D8557F9B2C349C7E /* Pods-ZegoEffectsExampleLegacy.release.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y98YBP7T6D;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/ZegoEffectsExampleLegacy/PrefixHeader.pch";
+				INFOPLIST_FILE = ZegoEffectsExampleLegacy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = im.zego.ZegoEffectsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86BD46B925ECF8D60004F6C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86BD46BA25ECF8D60004F6C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = armv7;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86BF271A27152F1100629882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZegoEffectsExample/Preview Content\"";
+				DEVELOPMENT_TEAM = B82BHJ5H89;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZegoEffectsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.im.ZegoEffectsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86BF271B27152F1100629882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZegoEffectsExample/Preview Content\"";
+				DEVELOPMENT_TEAM = B82BHJ5H89;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ZegoEffectsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zego.im.ZegoEffectsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8600EF8E2635154800A79D8D /* Build configuration list for PBXNativeTarget "ZegoEffectsExampleLegacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8600EF8C2635154800A79D8D /* Debug */,
+				8600EF8D2635154800A79D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86BD46A725ECF8D30004F6C0 /* Build configuration list for PBXProject "ZegoEffectsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86BD46B925ECF8D60004F6C0 /* Debug */,
+				86BD46BA25ECF8D60004F6C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86BF271927152F1100629882 /* Build configuration list for PBXNativeTarget "ZegoEffectsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86BF271A27152F1100629882 /* Debug */,
+				86BF271B27152F1100629882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86BD46A425ECF8D30004F6C0 /* Project object */;
+}

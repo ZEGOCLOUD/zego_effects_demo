@@ -1,0 +1,11 @@
+dependencyResolutionManagement {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+rootProject.name = "ZegoEffectsExample"
+include ':app'
+include ':EffectsForExpress'
+include ':EffectsOnly'
+include ':SDKManager'
